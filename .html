@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Fun Zone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎉 Welcome to the Fun Zone! 🎉</h1>
+
+  <!-- Button -->
+  <button id="magicBtn">Click Me!</button>
+
+  <!-- Image Gallery -->
+  <div class="gallery">
+    <img id="galleryImage" src="images/gallery1.jpg" alt="Gallery Image" />
+    <div>
+      <button onclick="prevImage()">Prev</button>
+      <button onclick="nextImage()">Next</button>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button onclick="showTab('about')">About</button>
+    <button onclick="showTab('projects')">Projects</button>
+    <button onclick="showTab('contact')">Contact</button>
+  </div>
+
+  <div id="tabContent">
+    <div id="about" class="tab">This is the About tab.</div>
+    <div id="projects" class="tab" style="display:none;">Project showcase coming soon.</div>
+    <div id="contact" class="tab" style="display:none;">Contact us at fun@zone.com</div>
+  </div>
+
+  <!-- Form -->
+  <form id="signupForm">
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button type="submit">Sign Up</button>
+    <p id="formFeedback"></p>
+  </form>
+
+  <!-- Secret Image -->
+  <img id="secretImg" src="images/gallery2.jpg" alt="Secret" style="width:100px; margin-top:30px;" />
+
+  <script src="script.js"></script>
+</body>
+</html>
